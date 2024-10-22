@@ -42,8 +42,8 @@ public class App {
                     personagem1 = arqueiro;
                     break;
                 default:
-                    System.out.println("Escolha inválida.");
-                    continue;
+                    System.out.println("Escolha invÃ¡lida.");
+                    break;
             }
 
             System.out.println("escolha seu oponente:");
@@ -64,21 +64,21 @@ public class App {
                     oponente = arqueiro;
                     break;
                 default:
-                    System.out.println("Escolha inválida.");
-                    continue;
+                    System.out.println("Escolha invÃ¡lida.");
+                   break;
 
             }
 
             if (personagem1 == oponente) {
-                System.out.println("Você não pode lutar contra você mesmo!");
-                continue;
+                System.out.println("VocÃª nÃ£o pode lutar contra vocÃª mesmo!");
+                
 
             }
             personagem1.atacar(oponente);
 
             if (!oponente.estarVivo()) {
                 System.out.println("\n" + oponente.nome + " foi derrotado! " + personagem1.nome + " venceu a batalha!");
-                break;
+           
 
             }
 
